@@ -20,11 +20,11 @@ const Card = () => {
           <h6 className="text-lg flex items-center gap-2">
             <img src={Icon} alt="icon" className="w-6 h-6" /> Cross-platform
           </h6>
-          <h4 className="text-2xl w-full xl:text-4xl lg:w-1/2 text-center px-2">
+          <h4 className="text-3xl w-full xl:text-5xl lg:w-1/2 text-center px-2">
             Download our app now to get on-the-go access
           </h4>
         </div>
-        <div className="relative flex flex-col lg:flex-row space-y-3 items-center justify-center space-x-3 mt-8">
+        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-3 mt-8">
           <Link
             to="/"
             className="py-3 px-7 md:py-5 md:px-10 bg-[#fff] text-[#00100B] rounded-md text-xs md:text-base flex items-center gap-3"

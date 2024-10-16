@@ -54,9 +54,10 @@ function App() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="lg:mt-20 px-4 sm:px-6 md:px-8 xl:px-24 mt-10 h-full"
+        className="relative lg:mt-20 px-4 sm:px-6 md:px-8 xl:px-24 mt-10 h-full"
       >
-        <div className="mx-auto py-10 lg:pt-16">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fff] to-[#fff]/45 opacity-100 z-0"></div>
+        <div className="mx-auto py-10 lg:pt-16 relative">
           <div className="bg-white py-1.5 px-1.5 sm:px-10 md:px-10 md:py-10">
             <div className="bg-teal-100 py-10 px-10 md:py-28 md:px-10">
               <div className="flex items-center justify-center bg-teal-600 px-8 md:px-8 lg:px-10 lg:py-24 py-10 md:py-6 rounded-lg">
@@ -219,8 +220,42 @@ function App() {
         <Card />
       </section>
 
-      <section>
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mt-20">
         <Testimonial />
+      </section>
+
+      <section
+        className="relative flex items-center justify-center lg:justify-start h-full mt-20 py-28 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${BackgroundImage})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-[#004741] to-[#004741]/90 opacity-100 z-0"></div>
+        <div className="relative z-10 lg:text-left text-center text-white px-4 sm:px-6 lg:px-20">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4">
+            Experience Our Services in Action
+          </h1>
+          <p className="text-base md:text-lg mb-8 lg:w-1/2">
+            Request a demo to explore our offerings firsthand and witness the
+            value they can bring to your needs.
+          </p>
+          <Link
+            to="/"
+            className="bg-white text-[#004741] px-6 py-4 rounded-lg hover:bg-gray-100 transition duration-300"
+          >
+            Request a demo now!
+          </Link>
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mt-20">
+        <div className="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left space-y-3">
+          <div className="flex flex-col space-y-4">
+            <h2 className="text-4xl">Check out some of our recent stories</h2>
+            <p className="text-lg">Stay in the Loop with the Latest Buzz – Your Source for All Things BuukMeNow!</p>
+          </div>
+          <Link to='/' className="text-[#004741] ">View more</Link>
+        </div>
       </section>
     </main>
   );
