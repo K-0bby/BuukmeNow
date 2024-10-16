@@ -9,6 +9,8 @@ import PartnerThree from "./assets/partner3.jpeg";
 import CardOne from "./assets/Group.svg";
 import CardTwo from "./assets/Group2.svg";
 import CardThree from "./assets/Group3.svg";
+import Card from "./components/Card";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -211,6 +213,14 @@ function App() {
             <p className="text-[#004741] text-lg">Businesses</p>
           </div>
         </div>
+      </section>
+
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mt-20">
+        <Card />
+      </section>
+
+      <section>
+        <Testimonial />
       </section>
     </main>
   );
