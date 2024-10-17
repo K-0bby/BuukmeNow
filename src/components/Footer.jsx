@@ -36,20 +36,20 @@ const Footer = () => {
           <div className="md:w-1/2 grid grid-cols-3 sm:grid-cols-3 gap-10">
             <div className="flex flex-col gap-3">
               <h3 className="font-bold mb-2">Column One</h3>
-              <Link to="#" className="hover:underline text-sm">Link One</Link>
-              <Link to="#" className="hover:underline text-sm">Link Two</Link>
-              <Link to="#" className="hover:underline text-sm">Link Three</Link>
-              <Link to="#" className="hover:underline text-sm">Link Four</Link>
-              <Link to="#" className="hover:underline text-sm">Link Five</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link One</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Two</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Three</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Four</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Five</Link>
             </div>
 
             <div className="flex flex-col gap-3">
               <h3 className="font-bold mb-2">Column Two</h3>
-              <Link to="#" className="hover:underline text-sm">Link Six</Link>
-              <Link to="#" className="hover:underline text-sm">Link Seven</Link>
-              <Link to="#" className="hover:underline text-sm">Link Eight</Link>
-              <Link to="#" className="hover:underline text-sm">Link Nine</Link>
-              <Link to="#" className="hover:underline text-sm">Link Ten</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Six</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Seven</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Eight</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Nine</Link>
+              <Link to="#" className="hover:text-gray-300 text-sm">Link Ten</Link>
             </div>
 
             {/* Social Media Section */}
@@ -78,9 +78,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between text-sm ">
             <p className=''>© 2023 Buukmenow. All rights reserved.</p>
             <div className="flex border-t md:border-none border-[#CCCFCE80] py-4 my-4 md:py-0 md:my-0 gap-4">
-              <Link to="#" className="hover:underline">Privacy policy</Link>
-              <Link to="#" className="hover:underline">Terms of use</Link>
-              <Link to="#" className="hover:underline">Contact us</Link>
+              <Link to="#" className="hover:text-gray-300">Privacy policy</Link>
+              <Link to="#" className="hover:text-gray-300">Terms of use</Link>
+              <Link to="#" className="hover:text-gray-300">Contact us</Link>
             </div>
           </div>
         </div>
