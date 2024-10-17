@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="md:border-b border-[#CCCFCE80] py-4 my-4">
           <div className="flex flex-col md:flex-row justify-between text-sm ">
             <p className=''>© 2023 Buukmenow. All rights reserved.</p>
-            <div className="flex border-t md:border-none border-[#CCCFCE80] py-4 my-4 md:py-0 md:my-0">
+            <div className="flex border-t md:border-none border-[#CCCFCE80] py-4 my-4 md:py-0 md:my-0 gap-4">
               <Link to="#" className="hover:underline">Privacy policy</Link>
               <Link to="#" className="hover:underline">Terms of use</Link>
               <Link to="#" className="hover:underline">Contact us</Link>
