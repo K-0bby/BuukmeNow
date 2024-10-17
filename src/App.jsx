@@ -11,6 +11,8 @@ import CardTwo from "./assets/Group2.svg";
 import CardThree from "./assets/Group3.svg";
 import Card from "./components/Card";
 import Testimonial from "./components/Testimonial";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -231,7 +233,7 @@ function App() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#004741] to-[#004741]/90 opacity-100 z-0"></div>
-        <div className="relative z-10 lg:text-left text-center text-white px-4 sm:px-6 lg:px-20">
+        <div className="relative z-10 lg:text-left text-center text-white px-4 sm:px-6 lg:px-40">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4">
             Experience Our Services in Action
           </h1>
@@ -248,15 +250,22 @@ function App() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mt-20">
-        <div className="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left space-y-3">
-          <div className="flex flex-col space-y-4">
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-28 mt-20">
+        <div className="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left space-y-8 px-16">
+          <div className="flex flex-col space-y-10 lg:space-y-3">
             <h2 className="text-4xl">Check out some of our recent stories</h2>
             <p className="text-lg">Stay in the Loop with the Latest Buzz – Your Source for All Things BuukMeNow!</p>
           </div>
           <Link to='/' className="text-[#004741] ">View more</Link>
         </div>
+        <div>
+          <Blog />
+        </div>
       </section>
+
+      <footer className="mt-20">
+          <Footer />
+      </footer>
     </main>
   );
 }
