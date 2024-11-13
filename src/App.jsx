@@ -20,29 +20,27 @@ function App() {
       <Navbar />
 
       <section className="h-full lg:mt-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24">
-        <h1 className="text-center mx-auto text-3xl md:text-5xl lg:text-[64px] w-full lg:w-2/3 font-light">
-          Receive <span className="font-semibold">bookings</span> and down
+        <h1 className="text-center mx-auto text-2xl md:text-5xl lg:text-[64px] w-full font-light">
+          Receive <span className="font-semibold">bookings</span> and down <br/>
           payments
         </h1>
-        <p className="text-[#808785] mx-auto text-center mt-5 text-sm md:text-base lg:text-lg w-full sm:w-4/5 md:w-2/3 lg:w-1/2">
+        <p className="text-[#808785]  text-center mt-5 text-sm md:text-base lg:text-lg w-full ">
           Say goodbye to scheduling headaches and hello to efficiency and
-          convenience.
+          convenience. <br /> With BuukMeNow, you can effortlessly manage your appointments, attract
+          more clients, and take your business to<br className="hidden md:block" /> new heights.
         </p>
-        <p className="text-[#808785] mx-auto text-center text-sm md:text-base lg:text-lg w-full sm:w-4/5 md:w-2/3 lg:w-1/2">
-          With BuukMeNow, you can effortlessly manage your appointments, attract
-          more clients, and take your business to new heights.
-        </p>
+        
 
         <div className="flex items-center justify-center space-x-3 mt-8">
           <Link
             to="/"
-            className="py-3 px-6 md:py-5 md:px-10 bg-[#004741] text-white rounded-md text-xs md:text-base"
+            className="py-[20px] px-10 md:py-5 md:px-10 bg-[#004741] text-white rounded-md text-xs md:text-base h-[56px] md:h-[65px]"
           >
             Get Started
           </Link>
           <Link
             to="/"
-            className="py-3 px-6 md:py-5 md:px-6 border border-[#004741] text-[#004741] rounded-md text-xs md:text-base"
+            className="py-[20px] px-7 md:py-5 md:px-6 border border-[#004741] text-[#004741] rounded-md text-xs md:text-base h-[56px] md:h-[65px]"
           >
             Request a demo
           </Link>
@@ -61,8 +59,8 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#fff] to-[#fff]/45 opacity-100 z-0"></div>
         <div className="mx-auto py-10 lg:pt-16 relative">
           <div className="bg-white py-1.5 px-1.5 sm:px-10 md:px-10 md:py-10">
-            <div className="bg-teal-100 py-10 px-10 md:py-28 md:px-10">
-              <div className="flex items-center justify-center bg-teal-600 px-8 md:px-8 lg:px-10 lg:py-24 py-10 md:py-6 rounded-lg">
+            <div className="bg-teal-100 py-6 px-10 md:py-28 md:px-10 h-[183px] lg:h-[639px] w-full">
+              <div className="flex items-center justify-center bg-teal-600 px-8 md:px-8 lg:px-10 lg:py-36 py-6 md:py-8 rounded-lg mt-4">
                 <input
                   type="text"
                   placeholder="www.buukmenow.com"
@@ -98,9 +96,9 @@ function App() {
 
       <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mt-20">
         {/* Header */}
-        <div className="text-center mx-auto font-medium text-2xl lg:text-5xl w-full max-w-4xl lg:leading-[56px] mb-16">
-          <h2>
-            Discover BuukMeNow in Action: Unveiling the Future of Seamless
+        <div className="text-center mx-auto font-medium text-2xl lg:text-5xl w-full lg:leading-[56px] mb-16">
+          <h2 className="leading-10">
+            Discover BuukMeNow in Action: <br className="block lg:hidden"/> Unveiling the <br className="hidden lg:block"/> Future of Seamless
             Booking.
           </h2>
         </div>
@@ -206,7 +204,7 @@ function App() {
             Appointments booked on BuukMeNow
           </p>
         </div>
-        <div className="flex flex-row space-x-10 items-center justify-center mt-10">
+        <div className="flex flex-row gap-48 md:gap-20 items-center justify-center mt-10">
           <div>
             <h4 className="text-[#00100B] font-medium text-5xl">311</h4>
             <p className="text-[#004741] text-lg">Services</p>
@@ -237,9 +235,9 @@ function App() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4">
             Experience Our Services in Action
           </h1>
-          <p className="text-base md:text-lg mb-8 lg:w-1/2">
+          <p className="text-base md:text-lg mb-8 leading-10 md:leading-0">
             Request a demo to explore our offerings firsthand and witness the
-            value they can bring to your needs.
+            value <br className="hidden lg:block"/> they can bring to your needs.
           </p>
           <Link
             to="/"

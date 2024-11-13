@@ -5,14 +5,14 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    text: "“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”",
-    name: "John Doe",
-    position: "CEO of Tech Innovators",
+    text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
+    name: "Arlene McCoy",
+    position: "Arlene Catering services",
     image: "src/assets/Avatar.svg",
   },
   {
     id: 2,
-    text: "“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”",
+    text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
     name: "Jane Smith",
     position: "CTO of Future Solutions",
     image: "src/assets/Avatar.svg",
@@ -48,8 +48,8 @@ const Testimonial = () => {
       <div className="max-w-screen-lg mx-auto px-4 ">
         <div className="relative">
           {/* Testimonial Slide */}
-          <div className="text-center">
-            <p className="text-lg sm:text-xl text-gray-800 mb-5 sm:mb-10">
+          <div className="text-center flex items-center justify-center flex-col">
+            <p className="text-lg sm:text-xl text-gray-800 mb-5 sm:mb-10 w-full md:w-1/2">
               {testimonials[currentSlide].text}
             </p>
             <div className="flex flex-row sm:flex-row justify-center items-center space-x-4 sm:space-x-4 space-y-5 sm:space-y-0">
@@ -70,20 +70,20 @@ const Testimonial = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="absolute top-24 -left-5 transform -translate-y-1/2">
+          <div className="absolute top-24 right-0 transform -translate-y-1/2 hidden md:block">
             <button
               onClick={handlePrevSlide}
-              className=" text-black p-2 rounded-full"
-            >
-              <ArrowLeft size={20} />
-            </button>
-          </div>
-          <div className="absolute top-24 -right-5 transform -translate-y-1/2">
-            <button
-              onClick={handleNextSlide}
-              className=" text-black p-2 rounded-full"
+              className=" text-black rounded-full"
             >
               <ArrowRight size={20} />
+            </button>
+          </div>
+          <div className="absolute top-24 left-0 transform -translate-y-1/2 hidden md:block">
+            <button
+              onClick={handleNextSlide}
+              className=" text-black  rounded-full"
+            >
+              <ArrowLeft size={20} />
             </button>
           </div>
 

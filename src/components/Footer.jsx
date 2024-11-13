@@ -4,7 +4,7 @@ import Logo from "../assets/FooterLogo.svg"; // Replace with the actual logo pat
 
 const Footer = () => {
   return (
-    <footer className="bg-[#004741] text-white py-8">
+    <footer className="bg-[#004741] text-white py-8 px-3 md:py-8">
       <div className="container mx-auto px-4 md:px-6">
         {/* Newsletter Section */}
         <div className="flex flex-col md:flex-row justify-between mb-8">
@@ -22,7 +22,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="w-full px-6 py-2 text-gray-900 rounded-sm"
               />
-              <button className="bg-black py-2.5 px-4 md:px-5 md:py-2.5 text-sm rounded-sm">
+              <button className="bg-black py-[11px] px-4 md:px-5 md:py-2.5 text-sm rounded-sm">
                 Subscribe
               </button>
             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="md:w-1/2 grid grid-cols-3 sm:grid-cols-3 gap-10">
+          <div className="md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-10 mt-16 md:mt-0">
             <div className="flex flex-col gap-3">
               <h3 className="font-bold mb-2">Column One</h3>
               <Link to="#" className="hover:text-gray-300 text-sm">Link One</Link>
