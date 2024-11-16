@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 // Sample testimonial data
@@ -34,25 +34,16 @@ const Testimonial = () => {
     );
   };
 
-  // Auto-slide every 5 seconds
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       handleNextSlide();
-//     }, 5000);
-//     return () => clearInterval(interval); // Cleanup on component unmount
-//   }, []);
-
   return (
-    // Carousel Section
     <section className="py-16 sm:py-20">
-      <div className="max-w-screen-lg mx-auto px-4 ">
+      <div className="max-w-screen-lg mx-auto px-4">
         <div className="relative">
           {/* Testimonial Slide */}
           <div className="text-center flex items-center justify-center flex-col">
             <p className="text-lg sm:text-xl text-gray-800 mb-5 sm:mb-10 w-full md:w-1/2">
               {testimonials[currentSlide].text}
             </p>
-            <div className="flex flex-row sm:flex-row justify-center items-center space-x-4 sm:space-x-4 space-y-5 sm:space-y-0">
+            <div className="flex flex-row justify-center items-center space-x-4">
               <img
                 src={testimonials[currentSlide].image}
                 alt={testimonials[currentSlide].name}
@@ -69,36 +60,23 @@ const Testimonial = () => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
-          <div className="absolute top-24 right-0 transform -translate-y-1/2 hidden md:block">
+          {/* Navigation Arrows (Hidden on Small Screens) */}
+          <div className="absolute inset-y-0 left-28 md:flex hidden items-center">
             <button
               onClick={handlePrevSlide}
-              className=" text-black rounded-full"
+              className="p-2 rounded-full bg-white border text-gray-600"
             >
-              <ArrowRight size={20} />
+              <ArrowLeft size={24} />
             </button>
           </div>
-          <div className="absolute top-24 left-0 transform -translate-y-1/2 hidden md:block">
+          <div className="absolute inset-y-0 right-28 md:flex hidden items-center">
             <button
               onClick={handleNextSlide}
-              className=" text-black  rounded-full"
+              className="p-2 rounded-full bg-white border text-gray-600"
             >
-              <ArrowLeft size={20} />
+              <ArrowRight size={24} />
             </button>
           </div>
-
-          {/* Pagination Dots */}
-          {/* <div className="mt-6 flex justify-center space-x-2">
-            {testimonials.map((_, idx) => (
-              <button
-                key={idx}
-                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full ${
-                  idx === currentSlide ? "bg-black" : "bg-gray-400"
-                }`}
-                onClick={() => setCurrentSlide(idx)}
-              ></button>
-            ))}
-          </div> */}
         </div>
       </div>
     </section>
