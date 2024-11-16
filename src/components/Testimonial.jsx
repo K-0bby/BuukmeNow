@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import avatar1 from "../assets/avatar1.jpeg";
+import avatar3 from "../assets/avatar3.jpeg";
 
 // Sample testimonial data
 const testimonials = [
@@ -8,14 +10,14 @@ const testimonials = [
     text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
     name: "Arlene McCoy",
     position: "Arlene Catering services",
-    image: "src/assets/avatar1.jpeg",
+    image: avatar1,
   },
   {
     id: 2,
     text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
     name: "Jane Smith",
     position: "CTO of Future Solutions",
-    image: "src/assets/avatar3.jpeg",
+    image: avatar3,
   },
 ];
 
