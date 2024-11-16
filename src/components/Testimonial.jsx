@@ -8,14 +8,14 @@ const testimonials = [
     text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
     name: "Arlene McCoy",
     position: "Arlene Catering services",
-    image: "src/assets/Avatar.svg",
+    image: "src/assets/avatar1.jpeg",
   },
   {
     id: 2,
     text: `“Lorem ipsum dolor sit amet consectetur. Duis rutrum pretium quis purus eleifend id risus tempor Duis rutrum pretium quis purus eleif.”`,
     name: "Jane Smith",
     position: "CTO of Future Solutions",
-    image: "src/assets/Avatar.svg",
+    image: "src/assets/avatar3.jpeg",
   },
 ];
 
