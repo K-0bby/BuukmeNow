@@ -29,7 +29,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-10 px-16 py-12">
+    <div className="flex flex-col lg:flex-row items-center gap-14 py-12">
       {blogData.map((blog, index) => (
         <div
           key={index}
@@ -38,7 +38,7 @@ const Blog = () => {
           <img
             src={blog.image}
             alt={blog.alt}
-            className="w-full sm:w-[360px] md:w-[480px] lg:w-[460px] aspect-[6/5] object-cover rounded-lg "
+            className="w-full sm:w-[360px] md:w-[480px] lg:w-[800px] aspect-[12/10] object-cover rounded-md "
           />
 
           <div className="py-4 text-">
