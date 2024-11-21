@@ -204,7 +204,7 @@ function App() {
             Appointments booked on BuukMeNow
           </p>
         </div>
-        <div className="flex flex-row gap-48 md:gap-20 items-center justify-center mt-10">
+        <div className="flex flex-row gap-40 md:gap-20 items-center justify-center mt-10">
           <div>
             <h4 className="text-[#00100B] font-medium text-5xl">311</h4>
             <p className="text-[#004741] text-lg">Services</p>

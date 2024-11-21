@@ -38,7 +38,7 @@ const Blog = () => {
           <img
             src={blog.image}
             alt={blog.alt}
-            className="w-full sm:w-[360px] md:w-[480px] lg:w-[800px] aspect-[12/10] object-cover rounded-md "
+            className="w-full sm:w-[360px] md:w-[560px] lg:w-[800px] aspect-[12/10] object-cover rounded-md "
           />
 
           <div className="py-4">
@@ -52,7 +52,7 @@ const Blog = () => {
               {blog.title}
             </h3>
             <p className="text-sm text-[#00100B] mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Suspendisse varius enim in eros.
             </p>
             <Link to="/" className="text-[#004741] text-sm mt-10 inline-block ">
