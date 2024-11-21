@@ -256,7 +256,7 @@ function App() {
           </div>
           <Link to='/' className="text-[#004741] ">View more</Link>
         </div>
-        <div className="ml-16">
+        <div>
           <Blog />
         </div>
       </section>
